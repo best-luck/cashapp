@@ -9,9 +9,9 @@
       content="Web site created using create-react-app"
     />
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" />
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" />
     <link rel="stylesheet"
-        href="./output.css" />
+        href="{{ asset('styles/app.css') }}" />
     <title>App</title>
   </head>
   <body>
