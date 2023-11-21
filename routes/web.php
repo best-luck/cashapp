@@ -17,6 +17,33 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/tasks', function () {
+    return view('tasks');
+});
+
+Route::get('/moduleoption', function () {
+    return view('moduleoption');
+});
+
+Route::get('/olympus', function () {
+    return view('olympus');
+});
+
+Route::get('/olympus2', function () {
+    return view('olympus2');
+});
+Route::get('/olympus2video', function () {
+    return view('olympus2video');
+});
+
+Route::get('/firemusic', function () {
+    return view('firemusic');
+});
+
+Route::get('/tasks/create', function () {
+    return view('createtask');
+});
+
 Route::get('/login', function () {
     return view('login');
 });

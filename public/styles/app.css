@@ -1043,13 +1043,223 @@ body {
 
 .arrow-up {
   border: solid #4D5959;
-  border-width: 0 3px 3px 0;
+  border-width: 0 3px 3px 0;  
   display: inline-block;
   padding: 3px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  flex: 1;
+  margin: 86px 49px 54px 44px;
+}
+.content_title{
+  margin-top: 78px;
+  left: 0;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: #F05F2B;
+}
+.content_title2{
+  margin-top: 20px;
+  left: 0;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: #F05F2B;
+}
+.main_content{
+  margin-top: 186px;
+  display: flex;
+  flex-direction: column;
+  height: 636px;
+  align-items: end;
+  gap: 19px;
+}
+
+.tasks_create{
+  top: 0;
+  font-size: 20px;
+  font-family: Biryani;
+  font-weight: 700;
+  width:193px;
+  height: 55px;
+  padding: 10px;
+  border-radius: 25px;
+  gap: 10px;
+  background-color: #EC228D;
+  color: white;
+}
+.tasks_button{
+  position: relative;
+  float: right;
+  
+}
+.option_task{
+  display: flex;
+  justify-content: center;
+}
+.task_table{
+  border-radius: 15px ;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.task_table thead{
+  
+  background-color: #FF91CB;
+  
+}
+.task_pagination{
+  justify-content: center;
+  display: flex;
+  gap: 103px;
+}
+.taskcard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 485px;
+  height: 246px;
+  top: 296px;
+  left: 382px;
+  border-radius: 20px;
+  border: 1px solid #F05F2B;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #EC228D;
+
+
+
+
+
+}
+.taskcard img{
+  fill: black;
+  width: 50px;
+  height: 50px;
+}
+.option_content{
+  display: flex;
+  gap : 46px;
+  justify-content: center;
+}
+.option_main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 78px;
+  gap: 270px;
+  margin-bottom: 115px;
+}
+
+.create_form{
+  padding-top: 33px;
+  text-align: center;
+  width: 985px;
+  height: 562px;
+  top: 253px;
+  left: 387px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+
+}
+.create_form2{
+  padding-top: 33px;
+  text-align: center;
+  width: 985px;
+  height: 765px;
+
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+
+}
+.olympus2video_upload{
+  display: flex;
+  width: 64.1%;
+  gap: 7px;
+ 
+
+}
+
+/* .create_form label{
+  width: 182px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #838383;
+  
+} */
+.create_panel{
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create_panel button{
+  margin-top: 42px;
+  width: 64.1%;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #EC228D;
+  border-color: #EC228D;
+}
+.form-group{
+  width: 64.1% !important;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.olympus2video_upload button{
+  display: flex ;
+  margin-top: 0;
+  align-items: center;
+  justify-content: center;
+  width: 182px ;
+  height: 30px;
+  left: 65px;
+  border-radius: 3px;
+  border: 1px;
+  background-color: #838383;
+}
+/* .form-select{
+  width: 64.1% !important;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+} */
+.create_form_title{
+  margin-top: 25px;
+  font-family: Biryani;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: auto;
+  padding-right: auto;
+  height: 56px;
+
+}
 @media (min-width: 640px) {
   .sm\:visible {
     visibility: visible;
@@ -1113,6 +1323,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+  
 }
 
 @media (min-width: 1024px) {
@@ -1153,5 +1364,19 @@ body {
 
   .lg\:pt-12 {
     padding-top: 3rem;
+  }
+}
+@media (max-width: 1300px) {
+  .create_form2 {
+    width: 100%;
+  }
+  .create_form{
+    width: 100%;
+  }
+  .option_content{
+    width: 100%;
+  }
+  .taskcard{
+    width: 100%;
   }
 }
